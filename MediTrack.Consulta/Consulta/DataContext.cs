@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Reflection.Emit;
 
-namespace Tizza
+namespace Consulta.DataBase.EF
 {
     public class DataContext : DbContext
     {
@@ -17,8 +15,6 @@ namespace Tizza
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<MovimentacaoCaixa>().HasKey(p => p.Id);
-            
-
             base.OnModelCreating(modelBuilder);
         }
     }
