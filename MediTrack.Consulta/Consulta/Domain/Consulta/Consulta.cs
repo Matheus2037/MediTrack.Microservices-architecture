@@ -1,8 +1,11 @@
-﻿using Consulta.Domain.Consulta.Enum;
+﻿using Consulta.DataBase.Models;
+using Consulta.Domain.Consulta.Enum;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
 namespace Consulta.Domain.Consulta
 {
+    [EntityTypeConfiguration(typeof(ConsultaModelConfiguration))]
     public class Consulta
     {
         public Consulta()

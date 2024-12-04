@@ -9,12 +9,12 @@ namespace Consulta.DataBase.EF
 
         }
         
-        public DbSet<MovimentacaoCaixa> MovimentacoesCaixa { get; set; }
+        public DbSet<Domain.Consulta.Consulta> Consultas { get; set; }
         
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<MovimentacaoCaixa>().HasKey(p => p.Id);
+            modelBuilder.Entity<Domain.Consulta.Consulta>().HasKey(p => p.Id);
             base.OnModelCreating(modelBuilder);
         }
     }

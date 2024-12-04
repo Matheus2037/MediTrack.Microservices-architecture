@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Caching.Memory;
+﻿using Consulta.DataBase.EF;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace MediTrack
 {

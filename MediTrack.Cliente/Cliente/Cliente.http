@@ -1,6 +1,6 @@
 @Cliente_HostAddress = http://localhost:5177
 
-GET {{Cliente_HostAddress}}/weatherforecast/
+GET {{Cliente_HostAddress}}/swagger/
 Accept: application/json
 
 ###
