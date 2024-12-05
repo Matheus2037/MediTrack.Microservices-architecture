@@ -2,8 +2,6 @@ using Hangfire;
 using Hangfire.Mongo;
 using Hangfire.Mongo.Migration.Strategies.Backup;
 using Hangfire.Mongo.Migration.Strategies;
-using System.Configuration;
-using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 using Consulta.DataBase.EF;
 using Microsoft.EntityFrameworkCore;
