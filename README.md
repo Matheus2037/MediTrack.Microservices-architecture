@@ -21,6 +21,25 @@ O sistema tem como objetivo gerenciar consultas médicas de forma eficiente, per
 * Garantir a consulta de informações de consultas por ID ou listagem geral. 
 * Validar a disponibilidade do doutor e do cliente antes de confirmar o agendamento. 
 
+## Microsserviços existentes:
+Serviço de Consultas:
+
+* Função: Gerencia as consultas médicas. Permite operações de criação, edição, exclusão e consulta de consultas.
+* Tecnologias: .NET Core, Entity Framework, Hangfire para tarefas agendadas.
+* Integração: Comunica-se com os serviços de doutores e pacientes para validação de dados.
+
+Serviço de Doutores:
+
+* Função: Mantém o cadastro de doutores, fornecendo informações sobre especialidades e disponibilidade.
+* Tecnologias: .NET Core, SQLite.
+* Integração: Responde a requisições do serviço de consultas sobre os doutores disponíveis.
+
+Serviço de Pacientes:
+
+* Função: Gerencia os dados dos pacientes. Oferece informações como histórico de consultas e dados de contato.
+* Tecnologias: .NET Core, SQLite.
+* Integração: Fornece informações ao serviço de consultas para validação e notificações.
+
 ## Executando
 
 Para executar o projeto (sem Docker):
