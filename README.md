@@ -80,4 +80,15 @@ Consulta:
 Doutor:
 ![Swagger_Doutor](https://github.com/user-attachments/assets/914158e5-2f8e-4cf3-97a6-d1ff7247d8ed)
 
+## Modelos DB
+Cliente:
+![Modelo_Cliente](https://github.com/user-attachments/assets/b9a210cd-6528-4863-81b5-993c18c58e04)
+
+Consulta:
+![Modelo_Consulta](https://github.com/user-attachments/assets/fd4e7f0f-ada7-4df2-9e0b-618ee2a4b5d9)
+
+Doutor:
+![Modelo_Doutor](https://github.com/user-attachments/assets/569f1ce2-77cc-4d6f-8319-724fe0b1a032)
+
+
 
