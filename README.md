@@ -1,6 +1,26 @@
 # API de Sistemas de saúde
 
 Este projeto foca no gerenciamento de informações de um hospital, permitindo o controle de médicos, pacientes e consultas. A aplicação permitirá que os administradores registrem informações sobre médicos e pacientes, agendem e atualizem consultas.
+
+## Propósito do sistema: 
+O sistema tem como objetivo gerenciar consultas médicas de forma eficiente, permitindo o agendamento, edição e exclusão de consultas, além de notificações automáticas para pacientes. Ele foi projetado para integrar diferentes serviços (clientes, doutores e consultas) através de microsserviços.  
+
+## Quais são os usuários: 
+
+* Os principais usuários do sistema são: 
+* Administradores: Responsáveis pela gestão dos dados do sistema. 
+* Doutores: Profissionais que realizam consultas médicas. 
+* Pacientes: Pessoas que agendam e participam das consultas. 
+
+## Requisitos funcionais: 
+
+* Permitir o agendamento de consultas com validação de horário disponível. 
+* Enviar notificações automáticas para pacientes sobre consultas agendadas. 
+* Permitir a edição de consultas, alterando dados como horário, doutor ou paciente. 
+* Implementar a exclusão de consultas, incluindo cancelamento de notificações associadas. 
+* Garantir a consulta de informações de consultas por ID ou listagem geral. 
+* Validar a disponibilidade do doutor e do cliente antes de confirmar o agendamento. 
+
 ## Executando
 
 Para executar o projeto (sem Docker):
