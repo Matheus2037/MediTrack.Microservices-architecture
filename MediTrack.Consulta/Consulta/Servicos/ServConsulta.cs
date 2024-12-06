@@ -40,7 +40,7 @@ namespace Consulta.Servicos
             var c = _context.Consultas.FirstOrDefault(f => f.Id == consulta.Id);
             if (c == null) throw new Exception("Não existe registro da consulta solicitada!");
 
-            ValidarInformacoes(consulta.Data, consulta.IdDoutor, consulta.IdClient);
+            await ValidarInformacoes(consulta.Data, consulta.IdDoutor, consulta.IdClient);
             consulta.Id = Guid.NewGuid();
 
             BackgroundJob.Schedule(
@@ -70,7 +70,7 @@ namespace Consulta.Servicos
 
         public async Task Inserir(Domain.Consulta.Consulta consulta)
         {
-            ValidarInformacoes(consulta.Data, consulta.IdDoutor, consulta.IdClient);
+            await ValidarInformacoes(consulta.Data, consulta.IdDoutor, consulta.IdClient);
             consulta.Id = Guid.NewGuid();
 
             BackgroundJob.Schedule(
@@ -91,7 +91,7 @@ namespace Consulta.Servicos
             Debug.WriteLine(msg);
         }
 
-        private async void ValidarInformacoes(DateTime DataConsulta, int idDoutor, int idCliente)
+        private async Task ValidarInformacoes(DateTime DataConsulta, int idDoutor, int idCliente)
         {
             if (_context.Consultas.Any(a => a.Data == DataConsulta && (a.IdDoutor == idDoutor || a.IdClient == idCliente)))
                 throw new Exception("Horario indisponivel para o Doutor ou Cliente!");
