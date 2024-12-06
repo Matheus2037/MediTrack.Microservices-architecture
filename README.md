@@ -69,3 +69,15 @@ Comandos:
 
 ## Rotas
 Todas as rotas estão disponibilizadas com exemplos no Swagger de cada serviço, ao executar eles conforme foi mostrado nas imagens irá automaticamente abrir os 3.
+
+## Swagger
+Cliente:
+![Swagger_Cliente](https://github.com/user-attachments/assets/407b9309-cdc0-4d79-891b-0d2eba379b13)
+
+Consulta:
+![Swagger_Consulta](https://github.com/user-attachments/assets/8ae6f236-1d15-468d-9373-3188a231aeee)
+
+Doutor:
+![Swagger_Doutor](https://github.com/user-attachments/assets/914158e5-2f8e-4cf3-97a6-d1ff7247d8ed)
+
+
