@@ -1,6 +1,6 @@
 @Consulta_HostAddress = http://localhost:5262
 
-GET {{Consulta_HostAddress}}/weatherforecast/
+GET {{Consulta_HostAddress}}/swagger/
 Accept: application/json
 
 ###
